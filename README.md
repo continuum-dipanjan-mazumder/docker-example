@@ -7,7 +7,7 @@ Note:
 sudo docker build -t poc-app .
 
 #Running a docker container use --net="host" to access the host os server as localhost<br>
-sudo docker run -v /home/ankita/go:/go --net="host" --name poc-go poc-app
+sudo docker run -e KAFKA_CONFIG='/go/src/POC/config' -v /home/ankita/go:/go --net="host" --name poc-go poc-app
 
 
 #If you want to rerun the docker image poc-go multiple times you will have to remove the already created container first and then run it again
