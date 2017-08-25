@@ -5,7 +5,7 @@ FROM golang:latest
 WORKDIR /go/src/app
 
 
-RUN git clone https://continuum-dipanjan-mazumder:13Chandana@github.com/ContinuumLLC/platform-common-lib.git
+RUN git clone https://<git-username>:<git-password>@github.com/ContinuumLLC/platform-common-lib.git
 RUN git clone https://github.com/continuum-dipanjan-mazumder/POC.git
 COPY . /go/src/app
 
